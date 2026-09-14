@@ -1,0 +1,389 @@
+materials:
+- material_id: material_20260726_154733_1
+  name: runninghub_mj_t2i
+  prompt: a simple red apple on white background
+  type: image
+  created_at: '20260726_154733'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: '提交任务失败，未获取到 taskId: {''taskId'': '''', ''status'': '''', ''errorCode'':
+    ''1014'', ''errorMessage'': ''Access Denied: Standard Model API is restricted
+    to Enterprise-Shared API Keys only.|访问被拒绝：标准模型API仅限企业级-共享API Key调用。'', ''results'':
+    None, ''clientId'': '''', ''promptTips'': '''', ''failedReason'': {}, ''usage'':
+    None, ''parentTaskId'': None, ''taskUsageList'': None}'
+- material_id: material_20260726_155152_2
+  name: ''
+  prompt: a simple red apple
+  type: image
+  created_at: '20260726_155152'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: '提交任务失败，未获取到 taskId: {''taskId'': '''', ''status'': '''', ''errorCode'':
+    ''1014'', ''errorMessage'': ''Access Denied: Standard Model API is restricted
+    to Enterprise-Shared API Keys only.|访问被拒绝：标准模型API仅限企业级-共享API Key调用。'', ''results'':
+    None, ''clientId'': '''', ''promptTips'': '''', ''failedReason'': {}, ''usage'':
+    None, ''parentTaskId'': None, ''taskUsageList'': None}'
+- material_id: material_20260726_155549_3
+  name: ''
+  prompt: 一位成熟的中国超模，骨相清晰、高颧骨、挺拔体态，具备强烈的杂志封面气场。自然质感底妆，深红棕色唇妆，极简大地色眼妆，蓬松大波浪长发在高原微风中轻轻飘动，眼神安静地望向远方地平线。身着高定象牙白真丝A字长裙，外搭深炭灰色oversized结构感羊毛绉纱披风外套，建筑感剪裁。佩戴单只暖金色雕塑耳坠，持黑色结构感皮质手拿包，穿尖头高跟短靴。模特静立于高原旷野中央，远处是连绵的雪山天际线，深蓝天空下白云流动，黄金时刻的落日从人物左后方洒下，温暖的轮廓光勾勒出人物与服装的边缘，长长的影子拖在草地上。135mm中长焦压缩将远山拉近，全身平视中心构图，地平线在画面下三分之一处，前景草穗虚焦增加层次。3800K暖金色调，低饱和大地色与深蓝色对比，轻微胶片颗粒与暗角，Velvia风格色彩。风吹动裙摆与发丝的静谧瞬间。8K超高清，自然肤质，商业杂志级精修。
+  type: image
+  created_at: '20260726_155549'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: '提交任务失败，未获取到 taskId: {''taskId'': '''', ''status'': '''', ''errorCode'':
+    ''1014'', ''errorMessage'': ''Access Denied: Standard Model API is restricted
+    to Enterprise-Shared API Keys only.|访问被拒绝：标准模型API仅限企业级-共享API Key调用。'', ''results'':
+    None, ''clientId'': '''', ''promptTips'': '''', ''failedReason'': {}, ''usage'':
+    None, ''parentTaskId'': None, ''taskUsageList'': None}'
+- material_id: material_20260816_160144_4
+  name: ''
+  prompt: 曼哈顿斑马线动态高定街头大片，自信女模穿过街口，深棕皮革长大衣、黑色高领、直筒裤、大号托特包，强势独立的表情看向镜头远处，背景有黄色出租车和玻璃写字楼，低机位全身构图，衣摆和发丝被风带动，晴天高反差街头光与建筑反射补光，主体锐利，背景轻微运动模糊，棕黑、出租车黄和玻璃蓝色调
+  type: image
+  created_at: '20260816_160144'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Max retries exceeded
+    with url: /openapi/v2/youchuan/text-to-image-v81 (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
+- material_id: material_20260816_162054_5
+  name: ''
+  prompt: 欧美城市时尚杂志人像，伦敦老式石砖街与公寓门廊，高挑国际女模被建筑门框和黑色铁艺栏杆前景框住，黑色长羊毛大衣、窄肩西装、丝质衬衫、尖头皮靴、小号手拿包，冷静正视镜头，湿润路面反光，阴天柔和方向侧光，冷灰黑与旧砖红色调，长焦压缩建筑构图，自然肤质，服装纹理清晰。
+  type: image
+  created_at: '20260816_162054'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Max retries exceeded
+    with url: /openapi/v2/youchuan/text-to-image-v81 (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
+- material_id: material_20260816_162423_6
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_162423'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  error: '提交任务失败，未获取到 taskId: {''taskId'': '''', ''status'': '''', ''errorCode'':
+    ''1014'', ''errorMessage'': ''Access Denied: Standard Model API is restricted
+    to Enterprise-Shared API Keys only.|访问被拒绝：标准模型API仅限企业级-共享API Key调用。'', ''results'':
+    None, ''clientId'': '''', ''promptTips'': '''', ''failedReason'': {}, ''usage'':
+    None, ''parentTaskId'': None, ''taskUsageList'': None}'
+- material_id: material_20260816_162751_7
+  name: ''
+  prompt: 欧美城市时尚杂志人像，伦敦老式石砖街与公寓门廊，高挑国际女模被建筑门框和黑色铁艺栏杆前景框住，黑色长羊毛大衣、窄肩西装、丝质衬衫、尖头皮靴、小号手拿包，冷静正视镜头，湿润路面反光，阴天柔和方向侧光，冷灰黑与旧砖红色调，长焦压缩建筑构图，自然肤质，服装纹理清晰。
+  type: image
+  created_at: '20260816_162751'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/e8af8fc2-53d3-496a-9130-56e798c56b0f.png
+  local_path: /Users/looper/fasion/wp/ai_fasion/material_lib/output/material_20260816_162751_7/material.png
+  task_id: ''
+- material_id: material_20260816_165001_8
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_165001'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/ea2ef62e-c232-410e-8cab-3065ca6195e5.png
+  local_path: /Users/looper/fasion/wp/ai_fasion/material_lib/output/material_20260816_165001_8/material.png
+  task_id: ''
+- material_id: material_20260816_174955_9
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_174955'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_175838_10
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_175838'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_185954_11
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_185954'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_193418_12
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_193418'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_200156_13
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_200156'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_200249_14
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_200249'
+  factory_id: runninghub_mj_t2i
+  status: pending
+  urls: []
+- material_id: material_20260816_200536_15
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_200536'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/ef8e39a0-23e6-4843-835e-0f12f70060f7.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/ef8e39a0-23e6-4843-835e-0f12f70060f7.png
+  local_path: /Users/looper/fasion/wp/ai_fasion/material_lib/output/material_20260816_200536_15/material.png
+  task_id: ''
+- material_id: material_20260816_201106_16
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_201106'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/aae59511-63ad-4ac2-b767-a16238196d38.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/666abb9f-66e3-448a-bdb8-dae408709a82.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/1cb277fe-5f0e-477b-99fe-b937005c4a00.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/cb0a90a9-26ad-4dce-bf64-cd624ff3bc09.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/aae59511-63ad-4ac2-b767-a16238196d38.png
+- material_id: material_20260816_202201_17
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_202201'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/07a2c1b9-a5eb-45ea-bb4f-b9779583677a.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/78e9b822-ed27-4960-ace3-d75e48c0faaf.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/bb47d947-6048-42f4-b5bd-d55e14ddce24.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/4a1607e9-af3b-4ecf-a62a-7c9b0501cd5c.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/07a2c1b9-a5eb-45ea-bb4f-b9779583677a.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260816_202720_18
+  name: ''
+  prompt: 欧美城市高定街头杂志人像，成熟国际女模站在纽约石材建筑街角的咖啡店外，灰色 oversized 羊毛西装外套、白衬衫、高腰阔腿裤、黑色复古墨镜、结构感手袋，清冷昂贵的表情，轻微回眸，远处有黄色出租车和干净街道纵深，午后硬质自然侧光，低饱和黑白灰与暖调胶片颗粒，80年代
+    VOGUE 街头高定摄影，70mm 长焦压缩，轻低机位，自然肤质，服装细节清晰。
+  type: image
+  created_at: '20260816_202720'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/020cd6f8-1eda-4cd2-aa1b-f022cb4d61a4.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/b1e5ca82-4f81-43b6-913a-021bfbac8c1f.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/1ca11df6-da4f-4340-a829-f0a18323b133.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/81f55e0e-bdd3-4997-b416-451616f87236.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/020cd6f8-1eda-4cd2-aa1b-f022cb4d61a4.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260816_231843_19
+  name: ''
+  prompt: 欧美城市时尚杂志人像，伦敦老式石砖街与公寓门廊，高挑国际女模被建筑门框和黑色铁艺栏杆前景框住，黑色长羊毛大衣、窄肩西装、丝质衬衫、尖头皮靴、小号手拿包，冷静正视镜头，湿润路面反光，阴天柔和方向侧光，冷灰黑与旧砖红色调，长焦压缩建筑构图，自然肤质，服装纹理清晰。
+  type: image
+  created_at: '20260816_231843'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/ce65ec59-ca10-4329-9ae7-ba2867190820.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/edace30c-c4f4-4a98-b72d-61139478d6df.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/e2029692-7f2b-44ff-b598-ca00ac179d40.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/0bbc5bb9-6364-48bb-8680-6711b9b41761.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/ce65ec59-ca10-4329-9ae7-ba2867190820.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260816_231902_20
+  name: ''
+  prompt: 巴黎黄昏街角的欧美城市电影感时尚大片，法式冷艳女模从精品店玻璃橱窗前经过，米白收腰风衣叠穿黑色针织，珍珠耳饰，复古小方包，侧脸看向街道光源，衣摆被风带起，cafe
+    暖灯与蓝灰天光形成暖冷混合色温，橱窗反射形成第二层人物轮廓，金色侧逆光，细腻胶片颗粒，自然肤质。
+  type: image
+  created_at: '20260816_231902'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/baa316e0-a535-46ef-9156-8a29631e65a6.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/e043f647-9964-41ba-a0a2-03521dfb1460.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/55eb8793-6032-4515-a872-cad2435bef01.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/eb36c3a6-26e4-450f-8b9f-6bcfc3e3886b.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/baa316e0-a535-46ef-9156-8a29631e65a6.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260816_232037_21
+  name: ''
+  prompt: 欧美城市时尚杂志人像，伦敦老式石砖街与公寓门廊，高挑国际女模被建筑门框和黑色铁艺栏杆前景框住，黑色长羊毛大衣、窄肩西装、丝质衬衫、尖头皮靴、小号手拿包，冷静正视镜头，湿润路面反光，阴天柔和方向侧光，冷灰黑与旧砖红色调，长焦压缩建筑构图，自然肤质，服装纹理清晰。
+  type: image
+  created_at: '20260816_232037'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Max retries exceeded
+    with url: /openapi/v2/youchuan/text-to-image-v81 (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
+- material_id: material_20260816_232329_22
+  name: ''
+  prompt: 巴黎黄昏街角的欧美城市电影感时尚大片，法式冷艳女模从精品店玻璃橱窗前经过，米白收腰风衣叠穿黑色针织，珍珠耳饰，复古小方包，侧脸看向街道光源，衣摆被风带起，cafe
+    暖灯与蓝灰天光形成暖冷混合色温，橱窗反射形成第二层人物轮廓，金色侧逆光，细腻胶片颗粒，自然肤质。
+  type: image
+  created_at: '20260816_232329'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Read timed out.
+    (read timeout=30)'
+- material_id: material_20260816_232353_23
+  name: ''
+  prompt: 曼哈顿斑马线动态高定街头大片，自信女模穿过街口，深棕皮革长大衣、黑色高领、直筒裤、大号托特包，强势独立的表情看向镜头远处，背景有黄色出租车和玻璃写字楼，低机位全身构图，衣摆和发丝被风带动，晴天高反差街头光与建筑反射补光，主体锐利，背景轻微运动模糊，棕黑、出租车黄和玻璃蓝色调。
+  type: image
+  created_at: '20260816_232353'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Max retries exceeded
+    with url: /openapi/v2/query (Caused by SSLError(SSLEOFError(8, ''[SSL: UNEXPECTED_EOF_WHILE_READING]
+    EOF occurred in violation of protocol (_ssl.c:1000)'')))'
+- material_id: material_20260816_233604_24
+  name: ''
+  prompt: 曼哈顿斑马线动态高定街头大片，自信女模穿过街口，深棕皮革长大衣、黑色高领、直筒裤、大号托特包，强势独立的表情看向镜头远处，背景有黄色出租车和玻璃写字楼，低机位全身构图，衣摆和发丝被风带动，晴天高反差街头光与建筑反射补光，主体锐利，背景轻微运动模糊，棕黑、出租车黄和玻璃蓝色调。
+  type: image
+  created_at: '20260816_233604'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/18a29738-a0c6-495e-9fcf-b627d9399101.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/e5ee75ac-2dd0-469f-a9a2-b159318f8afa.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/d9d7fb89-d71d-4a65-ad01-da17b8cc9329.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/9cc15d45-168b-4b9e-85f3-7acd81931852.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/18a29738-a0c6-495e-9fcf-b627d9399101.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260816_234823_25
+  name: ''
+  prompt: 干净稳定的欧美城市时尚 campaign 大片，优雅女模站在简洁欧洲石材建筑立面与轻微橱窗反射前，黑色合体西装、白衬衫、简洁长大衣、小号黑色手袋、黑色尖头鞋，中性冷静表情，轻微整理衣领，七分身或全身平视构图，柔和自然光，黑白灰为主并有暖色石材点缀，高清商业杂志质感，服装细节清晰，自然肤质。
+  type: image
+  created_at: '20260816_234823'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: 'HTTPSConnectionPool(host=''www.runninghub.ai'', port=443): Max retries exceeded
+    with url: /openapi/v2/youchuan/text-to-image-v81 (Caused by SSLError(SSLEOFError(8,
+    ''[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'')))'
+- material_id: material_20260823_153922_26
+  name: ''
+  prompt: 干净稳定的欧美城市时尚 campaign 大片，优雅女模站在简洁欧洲石材建筑立面与轻微橱窗反射前，黑色合体西装、白衬衫、简洁长大衣、小号黑色手袋、黑色尖头鞋，中性冷静表情，轻微整理衣领，七分身或全身平视构图，柔和自然光，黑白灰为主并有暖色石材点缀，高清商业杂志质感，服装细节清晰，自然肤质。
+  type: image
+  created_at: '20260823_153922'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: __init__() got an unexpected keyword argument 'ak'
+- material_id: material_20260823_154005_27
+  name: ''
+  prompt: 干净稳定的欧美城市时尚 campaign 大片，优雅女模站在简洁欧洲石材建筑立面与轻微橱窗反射前，黑色合体西装、白衬衫、简洁长大衣、小号黑色手袋、黑色尖头鞋，中性冷静表情，轻微整理衣领，七分身或全身平视构图，柔和自然光，黑白灰为主并有暖色石材点缀，高清商业杂志质感，服装细节清晰，自然肤质。
+  type: image
+  created_at: '20260823_154005'
+  factory_id: runninghub_mj_t2i
+  status: fail
+  urls: []
+  error: __init__() got an unexpected keyword argument 'ak'
+- material_id: material_20260823_154614_28
+  name: ''
+  prompt: 干净稳定的欧美城市时尚 campaign 大片，优雅女模站在简洁欧洲石材建筑立面与轻微橱窗反射前，黑色合体西装、白衬衫、简洁长大衣、小号黑色手袋、黑色尖头鞋，中性冷静表情，轻微整理衣领，七分身或全身平视构图，柔和自然光，黑白灰为主并有暖色石材点缀，高清商业杂志质感，服装细节清晰，自然肤质。
+  type: image
+  created_at: '20260823_154614'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/c21858af-c279-4dfd-b95a-b9bc931e7cb3.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/726bc9a0-6c37-4975-a41e-c9d5175382ed.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/da788e65-76c8-4d4d-8652-1e65948a4abe.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/4f101b53-e212-42c6-ac31-bfe6075c03a4.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/c21858af-c279-4dfd-b95a-b9bc931e7cb3.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260823_160040_29
+  name: ''
+  prompt: 干净稳定的欧美城市时尚 campaign 大片，优雅女模站在简洁欧洲石材建筑立面与轻微橱窗反射前，黑色合体西装、白衬衫、简洁长大衣、小号黑色手袋、黑色尖头鞋，中性冷静表情，轻微整理衣领，七分身或全身平视构图，柔和自然光，黑白灰为主并有暖色石材点缀，高清商业杂志质感，服装细节清晰，自然肤质。
+  type: image
+  created_at: '20260823_160040'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/128e5f44-a067-4b40-a8c0-c232f313e8bb.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/d70bf3b5-8205-4f7a-ad85-d885ab1897a8.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/87a1a616-8ad3-4923-b3f2-31a0a5dbe9a1.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/23f90a44-753b-48ff-a69a-1f56d1a1d034.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/128e5f44-a067-4b40-a8c0-c232f313e8bb.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260823_160224_30
+  name: ''
+  prompt: 欧美城市时尚杂志人像，伦敦老式石砖街与公寓门廊，高挑国际女模被建筑门框和黑色铁艺栏杆前景框住，黑色长羊毛大衣、窄肩西装、丝质衬衫、尖头皮靴、小号手拿包，冷静正视镜头，湿润路面反光，阴天柔和方向侧光，冷灰黑与旧砖红色调，长焦压缩建筑构图，自然肤质，服装纹理清晰。
+  type: image
+  created_at: '20260823_160224'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/eea079af-d100-46d7-a351-59912abd75ad.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/12fe315f-d8e4-449d-9692-03756a9bfe9b.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/9342a8ae-bf42-4866-a7bd-ca123c48db19.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/144921e1-a22d-430c-bfc9-469cdf9faff7.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/eea079af-d100-46d7-a351-59912abd75ad.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260823_160931_31
+  name: ''
+  prompt: 巴黎黄昏街角的欧美城市电影感时尚大片，法式冷艳女模从精品店玻璃橱窗前经过，米白收腰风衣叠穿黑色针织，珍珠耳饰，复古小方包，侧脸看向街道光源，衣摆被风带起，cafe
+    暖灯与蓝灰天光形成暖冷混合色温，橱窗反射形成第二层人物轮廓，金色侧逆光，细腻胶片颗粒，自然肤质。
+  type: image
+  created_at: '20260823_160931'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/99aaf0eb-24b3-4a77-87a6-ad53fe18578e.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/a78497cf-f3b2-449b-95c6-1b3913b7557c.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/dab9a251-81e6-4fb3-bf01-d6af6f3e146d.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/fafbcc8b-5f35-449d-bb87-27525fdfb1b7.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/99aaf0eb-24b3-4a77-87a6-ad53fe18578e.png
+  local_path: ''
+  task_id: ''
+- material_id: material_20260823_184205_32
+  name: ''
+  prompt: 雨夜先锋杂志时尚人像，自信性感的欧美女模，锋利下颌线与湿发背头，黑色亮面机车皮衣，结构感肩线与拉链细节，内搭黑色紧身衣，冷调烟熏眼妆，克制而有诱惑力的直视镜头眼神，一手轻拉皮衣领口，站在雨夜霓虹街头，湿沥青路面反光，红蓝紫霓虹与玻璃橱窗倒影，机顶硬闪主光与霓虹侧逆光，高反差湿润质感，黑冷蓝灰与霓虹点缀色调，杂志夜拍颗粒，低机位七分身到全身构图，50mm
+    镜头，自然肤质，皮革高光清晰。
+  type: image
+  created_at: '20260823_184205'
+  factory_id: runninghub_mj_t2i
+  status: succeed
+  urls:
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/195b5b63-e736-4719-8a4d-7fa985051752.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/6bd0c1a0-01e5-431e-8134-6920b9439fd7.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/b1936429-7639-4390-bc24-c979973d6755.png
+  - https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/536de971-3192-4f3e-adef-ba54a08cd6ba.png
+  url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/195b5b63-e736-4719-8a4d-7fa985051752.png
+  local_path: ''
+  task_id: ''

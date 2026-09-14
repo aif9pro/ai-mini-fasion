@@ -1,0 +1,96 @@
+# 忽略 日志 文件
+
+log/
+.log
+output/**/log/
+
+*.zip
+output/*/项目管理/export/*.zip
+
+.codebuddy/models.json
+.codebuddy/models1.json
+env_config.yaml
+
+# 忽略 output 目录
+skill_zip/
+output_backup/
+material_lib/output
+material_lib/backup
+voice_lib/
+media_out/
+material_back_up/
+element_lib/output
+element_lib/backup
+
+
+# 忽略 old_code 目录
+old_code/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS 系统文件
+.DS_Store
+
+# 临时文件
+*.log
+*.tmp
+*.temp
+
+# 模型文件和缓存（大文件）
+checkpoints/
+*.ckpt
+*.pth
+*.bin
+*.safetensors
+
+# 多媒体文件（图片/音频/视频/字体）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
+*.ico
+*.svg
+*.CR3
+*.cr3
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.wma
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.tar.gz
+
+output/zombie_farm/*

@@ -1,0 +1,10 @@
+Flask>=2.2
+PyYAML
+Pillow
+requests
+agno
+requests-toolbelt
+cos-python-sdk-v5
+alibabacloud-oss-v2
+PyJWT
+volcengine-python-sdk[ark]

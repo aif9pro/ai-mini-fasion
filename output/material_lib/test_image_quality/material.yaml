@@ -1,0 +1,31 @@
+task_name: test_image_quality
+analysis_time: '2026-06-14 18:02:47'
+media_source: /Users/looper/CodeBuddy/ai_art/skills/media-understand/assets/test/test_image.png
+avg_score: 4.5
+count: 1/1
+items:
+- path: /Users/looper/CodeBuddy/ai_art/skills/media-understand/assets/test/test_image.png
+  desc: 国风男性人物，古典服饰，室外场景
+  url: https://aivideo-1258344705.cos.ap-guangzhou.myqcloud.com/image/b1db39e9da4fa093f8f4699cae1b9964.png
+  score: 4.5
+  report:
+    target_match: 严重不符。描述要求‘室外场景’，实图为‘室内录音棚’；服饰为现代改良国风而非古典服饰。
+    score: 4.5
+    dimension_ratings:
+      composition:
+        score: 6.5
+        comment: 标准中景构图，主体居中平稳。但麦克风架遮挡路径略显生硬，空间深度利用不足，缺乏叙事张力。
+      lighting:
+        score: 5.5
+        comment: 典型演播室平光，光比过小导致面部缺乏立体感。高光分布均匀但无情绪指向，暗部缺乏层次。
+      color:
+        score: 7.5
+        comment: 肤色还原自然真实，色温控制精准。色调干净但缺乏电影级的色彩分级，艺术感略逊。
+      technical:
+        score: 6.0
+        comment: 合焦精准，数字感光质感清晰。但麦克风连接杆存在明显的AI逻辑缺陷，线条扭曲且违背物理结构。
+    summary: 该图呈现了高水准的商业人像质感，人物神态生动。然而，画面完全背离了‘室外场景’的文本设定，光影逻辑过于直白，缺乏电影画面的呼吸感与层次感，更像是一张高精度录音棚宣传照。
+    defects: 逻辑错误：麦克风支架线条纤细且扭曲，不符合物理承重逻辑；描述偏离：将描述中的室外场景错误生成为室内。
+    defects_score: 3.0
+    optimization: 建议增加45度侧逆光营造轮廓感；将背景更换为具有景深的室外自然景观；修正麦克风硬件的物理结构逻辑，并进行低饱和度、高动态范围的电影色彩分级调整。
+    cost_seconds: 15.91

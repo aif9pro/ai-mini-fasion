@@ -1,0 +1,252 @@
+/* ==================== Plan Tab ==================== */
+/* Left-right layout */
+.plan-layout {
+    display: flex; flex: 1; overflow: hidden;
+}
+.plan-list {
+    width: 260px; min-width: 180px; flex-shrink: 0;
+    overflow-y: auto; background: var(--bg-card);
+    border-right: 1px solid var(--border);
+    padding: 4px; display: flex; flex-direction: column; gap: 4px;
+}
+.plan-divider {
+    width: 4px; flex-shrink: 0; background: var(--border);
+    cursor: col-resize; transition: background .15s;
+}
+.plan-divider:hover, .plan-divider:active { background: var(--accent); }
+.plan-detail {
+    flex: 1; overflow-y: auto; padding: 16px 20px; min-width: 0;
+}
+
+/* Plan item */
+.plan-item {
+    display: flex; gap: 10px; padding: 8px; border-radius: 7px;
+    border: 1px solid transparent; cursor: pointer;
+    transition: border-color .12s, background .12s;
+}
+.plan-item:hover { background: var(--bg-hover); border-color: #4a3f2c; }
+.plan-item.active {
+    background: var(--accent-bg); border-color: var(--accent);
+}
+.plan-item-img {
+    width: 64px; height: 80px; flex-shrink: 0;
+    border-radius: 5px; overflow: hidden; background: var(--bg);
+    border: 1px solid var(--border);
+}
+.plan-img-placeholder {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; color: var(--text-muted);
+}
+.plan-item-info {
+    flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+}
+.plan-item-id {
+    font-size: 11px; font-weight: 700; color: var(--accent);
+    text-transform: uppercase; letter-spacing: .5px;
+}
+.plan-item-title {
+    font-size: 13px; color: var(--text-dim);
+    line-height: 1.4; display: -webkit-box;
+    -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ==================== Plan Toolbar ==================== */
+.plan-toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 16px;
+    background: var(--bg-card); border-bottom: 1px solid var(--border);
+    gap: 16px; flex-shrink: 0; flex-wrap: wrap;
+}
+.plan-toolbar-left {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.plan-toolbar-title {
+    font-size: 14px; font-weight: 600; color: var(--text);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* ==================== Plan Detail ==================== */
+.plan-prompts {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 18px;
+}
+.plan-prompt-block {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden;
+}
+.plan-prompt-block.neg {
+    border-color: rgba(208,138,124,.35);
+}
+.plan-prompt-label {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; color: var(--accent);
+    padding: 8px 12px; background: var(--bg-hover);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer; user-select: none;
+    display: flex; align-items: center; gap: 10px;
+}
+.plan-prompt-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; color: var(--accent);
+}
+.plan-lang-toggle {
+    display: inline-flex; align-items: center;
+    border: 1px solid var(--border); border-radius: 5px;
+    overflow: hidden; flex-shrink: 0;
+}
+.plan-lang-btn {
+    font-size: 11px; font-weight: 700; letter-spacing: .3px;
+    padding: 3px 10px; cursor: pointer;
+    background: transparent; color: var(--text-muted);
+    border: none; outline: none; transition: .15s;
+}
+.plan-lang-btn.active {
+    background: var(--accent); color: #1a140c;
+}
+.plan-prompt-block.neg .plan-prompt-label { color: var(--red); }
+.plan-prompt-block.neg { background: rgba(208,138,124,.05); }
+.plan-collapse-arrow {
+    font-size: 10px; transition: transform .2s;
+    margin-left: auto;
+}
+.plan-prompt-block.collapsed .plan-collapse-arrow { transform: rotate(-90deg); }
+.plan-prompt-block.collapsed .plan-prompt-text,
+.plan-prompt-block.collapsed .plan-prompt-actions { display: none; }
+.plan-prompt-text {
+    width: 100%; min-height: 120px; resize: vertical;
+    font-size: 13px; color: var(--text); font-family: var(--font-mono);
+    line-height: 1.7; padding: 10px 14px; word-break: break-word;
+    background: var(--bg-input, rgba(255,255,255,.03));
+    border: none; outline: none; box-sizing: border-box;
+}
+.plan-prompt-text:focus {
+    background: var(--bg-hover, rgba(255,255,255,.06));
+}
+.plan-prompt-actions {
+    display: flex; justify-content: flex-end;
+    padding: 6px 12px 10px;
+}
+.plan-gen-btn {
+    font-size: 12px; font-weight: 700;
+    padding: 5px 16px;
+    border: 1px solid var(--accent); border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent-bright), var(--accent)); color: #1a140c;
+    cursor: pointer; transition: .15s;
+}
+.plan-gen-btn:hover {
+    filter: brightness(1.15);
+}
+
+/* Plan sections */
+.plan-section {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px;
+    margin-bottom: 12px;
+}
+.plan-section-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; color: var(--accent);
+    padding-bottom: 8px; margin-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 6px;
+}
+.plan-section-title::before {
+    content: ''; width: 3px; height: 12px;
+    background: var(--accent); border-radius: 2px; flex-shrink: 0;
+}
+
+/* Plan rows */
+.plan-row {
+    display: flex; gap: 8px; padding: 4px 0; font-size: 13px;
+    align-items: flex-start;
+}
+.plan-row + .plan-row { border-top: 1px solid rgba(255,255,255,.03); }
+.plan-k {
+    color: var(--text-muted); min-width: 80px; max-width: 100px;
+    flex-shrink: 0; font-size: 12px; line-height: 1.5;
+}
+.plan-v {
+    color: var(--text-dim); flex: 1; word-break: break-word;
+    line-height: 1.5;
+}
+
+/* ==================== Plan Materials (右侧素材图片墙) ==================== */
+.plan-materials {
+    width: 320px; min-width: 220px; flex-shrink: 0;
+    display: flex; flex-direction: column;
+    background: var(--bg-card);
+    min-height: 0;
+    overflow: hidden;
+}
+.plan-materials-header {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; color: var(--accent);
+    padding: 10px 12px; border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+.plan-materials-list {
+    flex: 1; overflow-y: auto; padding: 8px;
+    min-height: 0;
+}
+.plan-img-card {
+    width: 100%;
+    border: 1px solid var(--border); border-radius: 7px;
+    overflow: hidden; background: var(--bg);
+    flex-shrink: 0;
+}
+.plan-img-card + .plan-img-card {
+    margin-top: 8px;
+}
+.plan-img-full {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: zoom-in;
+    background: var(--bg-hover);
+}
+.plan-img-meta {
+    font-size: 10px; color: var(--text-muted);
+    padding: 4px 8px; word-break: break-all;
+    border-top: 1px solid var(--border);
+    background: var(--bg-card);
+}
+.plan-img-card.placeholder {
+    min-height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted); font-size: 12px;
+}
+.plan-img-card.fail .plan-img-fail-msg {
+    min-height: 120px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--red); font-size: 12px;
+}
+
+/* ==================== Plan Image Viewer (大图预览) ==================== */
+.plan-viewer {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: rgba(0,0,0,.95); flex-direction: column;
+    align-items: center; justify-content: center;
+}
+.plan-viewer.show { display: flex; }
+.plan-viewer-img-wrap {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    width: 100%; overflow: hidden; cursor: pointer;
+}
+.plan-viewer-img-wrap img {
+    max-width: 92vw; max-height: 86vh; object-fit: contain; border-radius: 4px;
+}
+.plan-viewer-bar {
+    display: flex; align-items: center; gap: 20px;
+    padding: 10px 20px; background: rgba(0,0,0,.6); width: 100%;
+    justify-content: center; flex-shrink: 0;
+}
+.plan-viewer-btn {
+    padding: 8px 24px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--bg-card); color: var(--text); font-size: 14px;
+    cursor: pointer; transition: background .15s, border-color .15s; white-space: nowrap;
+}
+.plan-viewer-btn:hover { background: var(--accent); border-color: var(--accent); color: #1a140c; }
+.plan-viewer-info { font-size: 14px; color: var(--text-dim); min-width: 80px; text-align: center; }

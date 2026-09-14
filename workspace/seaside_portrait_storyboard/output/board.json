@@ -1,0 +1,94 @@
+{
+  "skill": "fasion-board",
+  "version": "1.0.0",
+  "language": "zh-CN",
+  "source_role": "role.json",
+  "character_lock": {
+    "name": "林澜",
+    "age_stage": "成年",
+    "age_range": "28岁",
+    "gender_expression": "女性，简洁成熟的中性偏柔和表达",
+    "identity": "海岸线旅行杂志模特，正在为海边时装专题进行日落前采风",
+    "appearance": {
+      "face": "鹅蛋脸，柔和清晰的眉眼，微微上扬的眼尾，自然挺直的鼻梁，清晰唇形",
+      "hair": "深棕色短波波头，发尾轻微外翘，海风吹动时露出左耳",
+      "body": "高挑匀称，肩背舒展，动作轻盈自然",
+      "signature_features": [
+        "酒红色窄丝巾系在颈侧",
+        "左耳小型银色耳扣",
+        "深棕色短波波头"
+      ]
+    },
+    "styling": {
+      "clothing": "米白色亚麻长风衣，雾蓝色高领针织衫，深灰色直筒长裤，棕色皮质短靴",
+      "makeup_hair": "自然清透妆面，保留真实肤质，深棕短波波头发尾轻微外翘",
+      "accessories": "酒红色颈侧窄丝巾、左耳小型银色耳扣、极简银色腕表"
+    },
+    "fixed_features": [
+      "28岁成年女性海岸线旅行杂志模特",
+      "鹅蛋脸、柔和清晰眉眼、微微上扬的眼尾和清晰唇形",
+      "深棕色短波波头，发尾轻微外翘",
+      "高挑匀称体态，肩背舒展",
+      "米白色亚麻长风衣、雾蓝色高领针织衫、深灰直筒长裤、棕色皮质短靴",
+      "酒红色窄丝巾系在颈侧",
+      "左耳小型银色耳扣"
+    ]
+  },
+  "shots": [
+    {
+      "shot_id": "shot_01",
+      "shot_scale": "extreme_long_shot",
+      "shot_scale_zh": "远景",
+      "composition": "竖幅远景，人物位于画面左下方三分之一，广阔海面、潮线、礁石和低饱和夕照天空占据主要画面，保留大面积留白",
+      "visual_focus": "建立林澜与海岸环境的尺度关系，表现独自进入海岸线的叙事开端",
+      "prompt": "Extreme long shot, vertical fashion editorial photograph of Lin Lan, a 28-year-old adult female coastal travel magazine model, standing small at the left lower third beside a wide shoreline at pre-sunset. Keep her consistent: oval face, soft clear eyes with slightly upturned outer corners, dark brown short bob with slightly flipped ends, tall balanced body, ivory linen long coat over a mist-blue high-neck knit, charcoal straight-leg trousers, brown leather ankle boots, burgundy narrow neck scarf tied at the side, small silver ear cuff on her left ear. Vast sea, wet tidal line, distant rocks and pale peach-blue sky dominate the frame; wind gently moves the coat hem and scarf, quiet solitary arrival, natural editorial photography, realistic texture, soft low sun, clear environmental scale.",
+      "prompt_zh": "竖幅时尚纪实远景：林澜，28岁成年女性海岸线旅行杂志模特，位于潮线旁画面左下方三分之一处，人物保持统一形象——鹅蛋脸、柔和清晰眉眼、微微上扬的眼尾、深棕色发尾轻微外翘的短波波头、高挑匀称体态；穿米白色亚麻长风衣、雾蓝色高领针织衫、深灰直筒长裤、棕色皮质短靴，颈侧系酒红色窄丝巾，左耳佩戴小型银色耳扣。广阔海面、湿润潮线、远处礁石和浅桃蓝夕照天空占据画面主体，风轻轻吹动衣摆与丝巾，以大环境尺度讲述她独自走上海岸线，真实摄影质感、自然低角度柔光、大面积留白。",
+      "negative_prompt": "不要改变林澜的28岁成年女性身份、鹅蛋脸、深棕短波波头、米白亚麻长风衣、酒红颈侧丝巾或左耳银色耳扣；不要年龄漂移、身份漂移、多人、重复人物、近距离构图、泳装、裸露、挑逗姿态、畸形人体、文字、水印、Logo、低清晰度、过曝、失焦"
+    },
+    {
+      "shot_id": "shot_02",
+      "shot_scale": "long_shot",
+      "shot_scale_zh": "全景",
+      "composition": "竖幅全景，完整呈现人物从头到脚，林澜站在画面中央偏右的礁石与潮线交界处，海平线位于上三分之一，衣摆形成清晰轮廓",
+      "visual_focus": "展示完整服装造型、人物体态与海边行走关系",
+      "prompt": "Long shot, full-body vertical fashion portrait of Lin Lan, a 28-year-old adult female coastal travel magazine model, walking slowly along the tide line near shore rocks. Keep the exact same character and styling: oval face, soft clear eyes, slightly upturned eye corners, dark brown short bob with gently flipped ends, tall balanced posture, ivory linen long coat, mist-blue high-neck knit, charcoal straight-leg trousers, brown leather ankle boots, burgundy narrow scarf tied at the side of her neck, small silver ear cuff on the left ear, minimal silver watch. Full outfit visible from head to toe, three-quarter side view, her left hand lightly arranging the scarf while the other arm rests naturally; calm sea, foam tracing the foreground, pre-sunset side light, wind-defined silhouette, refined travel fashion editorial.",
+      "prompt_zh": "竖幅时尚全景人像：林澜，28岁成年女性海岸线旅行杂志模特，沿近岸潮线缓慢行走，站在礁石与海水交界处。保持完全一致的角色形象——鹅蛋脸、柔和清晰眉眼、微微上扬的眼尾、深棕色发尾轻微外翘的短波波头、高挑匀称体态；完整穿着米白色亚麻长风衣、雾蓝色高领针织衫、深灰直筒长裤、棕色皮质短靴，颈侧酒红色窄丝巾、左耳小型银色耳扣和极简银色腕表清晰可见。人物从头到脚完整入画，三分之四侧身，左手轻轻整理丝巾，海浪泡沫在前景勾勒潮线，海平线位于上三分之一，日落前侧光和海风塑造衣物轮廓，旅行时装杂志质感。",
+      "negative_prompt": "不要改变林澜的年龄、身份、脸部、深棕短波波头、服装配色、酒红颈侧丝巾或左耳银色耳扣；不要裁切脚部、半身近景、额外人物、重复肢体、错误手指、泳装、裸露、性化姿态、文字、水印、Logo、低清晰度、塑料皮肤、严重失焦"
+    },
+    {
+      "shot_id": "shot_03",
+      "shot_scale": "medium_shot",
+      "shot_scale_zh": "中景",
+      "composition": "竖幅中景，取腰部以上至大腿，人物位于画面中央，身体朝向海面、脸部回转四分之一朝镜头，前景用一块虚化礁石形成层次",
+      "visual_focus": "表现人物整理丝巾的动作、衣料质感和与海风互动的瞬间",
+      "prompt": "Medium shot, waist-up to mid-thigh vertical editorial portrait of Lin Lan, a 28-year-old adult female coastal travel magazine model, paused beside a seaside rock and looking toward the horizon with a slight quarter-turn back to camera. Keep her fixed identity and appearance: oval face, soft clear eyes with slightly upturned outer corners, dark brown short bob with slightly flipped ends, tall balanced frame, ivory linen long coat over a mist-blue high-neck knit, charcoal straight-leg trousers, brown leather ankle boots partially visible, burgundy narrow scarf tied at the side of her neck, small silver ear cuff on her left ear. One hand gently adjusts the scarf, coat lapels and knit texture visible, restrained thoughtful expression, ocean behind her, blurred rock in foreground, clean pre-sunset sea breeze, natural skin and tactile fabric detail.",
+      "prompt_zh": "竖幅时尚中景人像：取林澜腰部以上至大腿，28岁成年女性海岸线旅行杂志模特，停在海边礁石旁望向地平线，身体朝海面、脸部以四分之一角度回转向镜头。保持固定形象——鹅蛋脸、柔和清晰眉眼、微微上扬的眼尾、深棕色发尾轻微外翘的短波波头、高挑匀称体态；米白色亚麻长风衣内搭雾蓝色高领针织衫，深灰直筒裤，颈侧酒红色窄丝巾，左耳小型银色耳扣。她用一只手轻轻整理丝巾，衣领、亚麻纹理与针织肌理清晰可见，表情克制而专注，海面位于背景，前景虚化礁石制造层次，日落前海风带来衣料动态，自然肤质与真实摄影细节。",
+      "negative_prompt": "不要改变林澜的28岁成年女性身份、脸型、眼尾、发型、服装和酒红丝巾；不要正面证件照式构图、全身远景、特写裁切、缺失左耳银色耳扣、多人、重复人物、错误手指、夸张表情、裸露、泳装、文字、水印、Logo、低清晰度、过度磨皮"
+    },
+    {
+      "shot_id": "shot_04",
+      "shot_scale": "close_up",
+      "shot_scale_zh": "近景",
+      "composition": "竖幅近景，胸部以上，人物侧脸占画面右侧，左侧留出海面与天空负空间；浅景深将海浪化为柔和背景光斑",
+      "visual_focus": "突出面部神态、发丝、丝巾和左耳耳扣在海风中的细节",
+      "prompt": "Close-up, chest-up vertical fashion portrait of Lin Lan, a 28-year-old adult female coastal travel magazine model, in a calm three-quarter profile facing the sea, her eyes softly focused on the horizon. Preserve the exact same oval face, soft clear eyes, slightly upturned outer eye corners, natural straight nose, defined lips, dark brown short bob with slightly flipped ends, ivory linen coat, mist-blue high-neck knit, burgundy narrow scarf tied at the side of her neck, and small silver ear cuff on her left ear. A few bob strands lift in the sea breeze; the scarf edge and ear cuff catch the last warm light. Ocean and pale sunset become a creamy shallow-depth-of-field background, quiet reflective expression, authentic skin texture, premium natural-light editorial photography.",
+      "prompt_zh": "竖幅时尚近景人像：胸部以上的林澜，28岁成年女性海岸线旅行杂志模特，以平静的四分之三侧脸朝向海面，目光柔和地落在地平线上。严格保持同一鹅蛋脸、柔和清晰眉眼、微微上扬的眼尾、自然挺直鼻梁、清晰唇形、深棕色发尾轻微外翘的短波波头；米白亚麻长风衣、雾蓝高领针织衫、颈侧酒红色窄丝巾和左耳小型银色耳扣全部保留。海风吹起几缕短发，丝巾边缘与耳扣接住最后的暖光，海面和浅色夕阳在浅景深背景中化为柔和光斑，表情安静而有思考感，保留真实肤质与自然光时尚摄影质感。",
+      "negative_prompt": "不要改变林澜的年龄、身份、鹅蛋脸、微上扬眼尾、深棕短波波头、酒红颈侧丝巾或左耳银色耳扣；不要全身、远景、正脸换人、浓妆、长发、夸张美颜、性化表情、裸露、多人、重复面孔、文字、水印、Logo、低清晰度、失焦、过曝"
+    },
+    {
+      "shot_id": "shot_05",
+      "shot_scale": "extreme_close_up",
+      "shot_scale_zh": "特写",
+      "composition": "竖幅极近特写，聚焦左耳、耳侧短波波头、颈侧丝巾结和一小段面颊轮廓，海面夕光作为极简虚化背景",
+      "visual_focus": "锁定角色的局部识别锚点：左耳银色耳扣、酒红丝巾与深棕短波波头",
+      "prompt": "Extreme close-up, vertical macro editorial detail of Lin Lan, a 28-year-old adult female coastal travel magazine model, focusing on the left side of her face and neck: the edge of her oval cheek, dark brown short bob with slightly flipped ends revealing the left ear, the small silver ear cuff, and the burgundy narrow scarf tied at the side of her neck. The ivory linen coat and mist-blue high-neck knit appear only as tactile edges. Preserve her recognizable face contour, natural skin texture and the exact fixed accessories; a strand of hair moves in the sea breeze, tiny warm reflection on silver, soft ocean sunset bokeh behind, refined cinematic fashion detail, no full face required but clearly the same Lin Lan.",
+      "prompt_zh": "竖幅时尚极近特写：聚焦林澜左侧脸与颈部局部——28岁成年女性的鹅蛋脸颊轮廓、露出左耳的深棕色短波波头及轻微外翘发尾、左耳小型银色耳扣、颈侧酒红色窄丝巾结。米白色亚麻长风衣与雾蓝色高领针织衫只以边缘肌理出现。必须保留她可识别的自然脸部轮廓、真实肤质和准确固定配饰，海风带动一缕短发，银色耳扣映出微小暖光，海边夕照在背景化为柔和光斑，电影感时尚细节特写，不必展示完整脸部但必须明确是同一位林澜。",
+      "negative_prompt": "不要改变林澜的28岁成年女性身份、左耳位置、深棕短波波头、酒红颈侧丝巾或银色耳扣；不要替换配饰、耳洞错位、长发、完整换脸、完整全身、多人、重复局部、畸形耳朵、畸形五官、裸露、性化内容、文字、水印、Logo、低清晰度、噪点、过度锐化、失焦"
+    }
+  ],
+  "inferred_items": [
+    "五镜头统一采用日落前海岸线采风叙事",
+    "采用竖幅时尚摄影构图，具体画幅比例留给生成或后期流程",
+    "各镜头的站位、动作、海浪和礁石关系为服务五种景别而补全"
+  ]
+}

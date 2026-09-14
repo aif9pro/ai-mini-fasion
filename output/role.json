@@ -1,0 +1,76 @@
+{
+  "skill": "fasion-role",
+  "version": "3.0.0",
+  "language": "zh-CN",
+  "usage": "时尚人像、品牌广告、杂志或 Lookbook",
+  "role": {
+    "id": "role_01",
+    "name": "Elena Vale",
+    "type": "欧美时尚模特",
+    "age_stage": "成年",
+    "age_range": "28岁",
+    "gender_expression": "女性",
+    "identity": "成熟、自信、冷艳而克制的欧美时尚模特，适合高级品牌广告和杂志人像",
+    "appearance": {
+      "face": "高颧骨、清晰下颌线、偏窄长脸型、灰蓝色杏眼",
+      "hair": "深栗色长波浪发，发尾自然蓬松",
+      "body": "修长、匀称、略带运动感的身材比例",
+      "signature_features": [
+        "左锁骨附近一颗小痣",
+        "直接而安静的眼神",
+        "自然光泽肌肤"
+      ]
+    },
+    "personality": [
+      "成熟",
+      "冷静",
+      "自信",
+      "克制",
+      "带有轻微危险感"
+    ],
+    "styling": {
+      "clothing": "黑色剪裁西装外套，酒红色缎面吊带上衣，高腰直筒长裤，尖头高跟鞋",
+      "makeup_hair": "柔和烟熏眼妆、自然光泽肌肤、低饱和酒红唇色，深栗色长波浪发",
+      "accessories": "金色细链项链和窄金属耳环"
+    },
+    "behavior": {
+      "expression": "克制的表情，嘴角轻微上扬，目光直视镜头",
+      "pose": "肩线打开，身体略微侧向镜头，一手插袋，另一手轻触外套领口",
+      "habit": "保持稳定站姿，以细微手部动作制造从容和性感"
+    },
+    "story": "夜晚城市高级酒店或酒廊入口的品牌广告瞬间，人物刚结束一场私人晚宴，神态从容，带有成熟都市女性的独立感。",
+    "consistency": {
+      "fixed": [
+        "28岁成年女性",
+        "高颧骨和清晰下颌线",
+        "灰蓝色杏眼",
+        "深栗色长波浪发",
+        "左锁骨附近小痣",
+        "修长匀称、略带运动感的身材比例",
+        "冷静自信的成熟气质"
+      ],
+      "variable": [
+        "服装颜色与材质",
+        "妆容强度",
+        "站姿与手部动作",
+        "城市或室内场景",
+        "光线与构图"
+      ]
+    },
+    "prompt": "28-year-old adult European fashion model, mature and confident, high cheekbones, defined jawline, narrow oval face, gray-blue almond eyes, direct calm gaze, long dark chestnut wavy hair with naturally full ends, a small beauty mark near the left collarbone, tall slender athletic proportions, wearing a sharply tailored black blazer over a burgundy satin camisole, high-waisted straight-leg trousers and pointed heels, delicate gold chain necklace and narrow metal earrings, soft smoky eye makeup, luminous natural skin, muted burgundy lips, standing with open shoulders and a slight angle to camera, one hand in pocket and the other touching the blazer lapel, subtle knowing smile, sophisticated urban sensuality, restrained adult fashion, premium editorial campaign, nighttime luxury hotel entrance, cinematic city light, realistic fashion portrait, full-body composition",
+    "negative_prompt": "minor, youthful appearance, childlike features, nudity, explicit sexual content, lingerie-only styling, exaggerated cleavage, distorted face, asymmetrical eyes, malformed hands, extra fingers, extra limbs, duplicate person, inconsistent identity, changed hair color, changed hairstyle, missing beauty mark, distorted body proportions, plastic skin, excessive retouching, low detail, cheap fashion look, blurry image",
+    "source": {
+      "user_constraints": [
+        "欧美外形",
+        "性感模特",
+        "时尚人物形象"
+      ],
+      "inferred_items": [
+        "28岁成年女性",
+        "高级品牌广告或杂志用途",
+        "黑色与酒红色的成熟造型",
+        "通过剪裁、眼神和姿态表达性感"
+      ]
+    }
+  }
+}

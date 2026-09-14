@@ -1,0 +1,43 @@
+{
+  "skill": "fasion-role",
+  "version": "3.0.0",
+  "language": "zh-CN",
+  "usage": "",
+  "role": {
+    "id": "role_01",
+    "name": "",
+    "type": "",
+    "age_stage": "",
+    "age_range": "",
+    "gender_expression": "",
+    "identity": "",
+    "appearance": {
+      "face": "",
+      "hair": "",
+      "body": "",
+      "signature_features": []
+    },
+    "personality": [],
+    "styling": {
+      "clothing": "",
+      "makeup_hair": "",
+      "accessories": ""
+    },
+    "behavior": {
+      "expression": "",
+      "pose": "",
+      "habit": ""
+    },
+    "story": "",
+    "consistency": {
+      "fixed": [],
+      "variable": []
+    },
+    "prompt": "",
+    "negative_prompt": "",
+    "source": {
+      "user_constraints": [],
+      "inferred_items": []
+    }
+  }
+}

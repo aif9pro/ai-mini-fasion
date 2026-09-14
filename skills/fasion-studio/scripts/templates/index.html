@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/plan/plan.css?v=8">
+<link rel="stylesheet" href="/static/material/material.css">
+<link rel="stylesheet" href="/static/exhibition/gallery.css">
+<link rel="stylesheet" href="/static/generate/generate.css">
+<link rel="stylesheet" href="/static/overview/overview.css?v=3">
+</head>
+<body>
+
+<div class="main">
+    <div class="topbar">
+        <div class="brand">
+            <span class="brand-bar">|</span>
+            <span class="brand-name">AI-MINI-STUDIO</span>
+            <span class="brand-sep">|</span>
+            <div class="task-select" id="taskSelect">
+                <button class="task-select-btn" id="taskSelectBtn" onclick="openTaskModal(event)">
+                    <span class="task-select-name" id="taskTitle">选择任务</span>
+                    <span class="task-select-arrow">▾</span>
+                </button>
+            </div>
+        </div>
+        <div class="meta" id="taskMeta"></div>
+    </div>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="home">概览</button>
+        <button class="tab-btn" data-tab="role">角色</button>
+        <button class="tab-btn" data-tab="board">分镜</button>
+        <button class="tab-btn" data-tab="plan">策划</button>
+        <button class="tab-btn" data-tab="materials">素材</button>
+        <button class="tab-btn" data-tab="exhibition">相册</button>
+        <button class="tab-btn" data-tab="generate">生成</button>
+    </div>
+    <div class="content">
+        <div class="tab-panel active" id="tab-home">
+            <section class="overview-docs-pane overview-page-pane">
+                <div class="overview-pane-kicker">PROJECT NOTES</div>
+                <div class="overview-subtabs">
+                    <button class="overview-subtab active" data-doc="intent" onclick="Overview.switchDoc('intent')">需求</button>
+                    <button class="overview-subtab" data-doc="plan" onclick="Overview.switchDoc('plan')">规划</button>
+                    <button class="overview-subtab" data-doc="design" onclick="Overview.switchDoc('design')">设计</button>
+                    <button class="overview-subtab" data-doc="validation" onclick="Overview.switchDoc('validation')">检查</button>
+                </div>
+                <div class="overview-body">
+                    <div class="overview-doc active" id="overview-intent"><div class="home-placeholder">选择任务查看需求</div></div>
+                    <div class="overview-doc" id="overview-plan"><div class="home-placeholder">选择任务查看规划</div></div>
+                    <div class="overview-doc" id="overview-design"><div class="home-placeholder">选择任务查看设计</div></div>
+                    <div class="overview-doc" id="overview-validation"><div class="home-placeholder">选择任务查看检查</div></div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-panel" id="tab-role">
+            <section class="creative-pane creative-page-pane">
+                <div class="overview-pane-kicker">CREATIVE BLUEPRINT / CHARACTER</div>
+                <div class="creative-content"><div class="creative-view active" id="creative-role"><div class="home-placeholder">选择任务查看角色设定</div></div></div>
+            </section>
+        </div>
+        <div class="tab-panel" id="tab-board">
+            <section class="creative-pane creative-page-pane">
+                <div class="overview-pane-kicker">CREATIVE BLUEPRINT / SHOT LIST</div>
+                <div class="creative-content"><div class="creative-view active" id="creative-board"><div class="home-placeholder">选择任务查看分镜列表</div></div></div>
+            </section>
+        </div>
+        <div class="tab-panel" id="tab-plan">
+            <div class="plan-toolbar" id="planToolbar" style="display:none">
+                <div class="plan-toolbar-row">
+                    <span class="plan-toolbar-title" id="planToolbarTitle"></span>
+                </div>
+            </div>
+            <div class="plan-layout">
+                <div class="plan-list" id="planList">
+                    <div class="empty"><div class="spinner"></div>加载中</div>
+                </div>
+                <div class="plan-divider" id="planDividerLeft"></div>
+                <div class="plan-detail" id="planDetail">
+                    <div class="detail-empty">← 选择左侧方案查看详情</div>
+                </div>
+                <div class="plan-divider" id="planDividerRight"></div>
+                <div class="plan-materials" id="planMaterials">
+                    <div class="plan-materials-header">生成素材</div>
+                    <div class="plan-materials-list" id="planMaterialsList">
+                        <div class="detail-empty">← 选择方案后显示生成素材</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-panel" id="tab-materials">
+            <div class="materials-toolbar">
+                <span class="toolbar-label">视图</span>
+                <button class="view-mode-btn active" data-mode="list" onclick="Material.setMode('list')">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                        <rect x="0" y="1" width="13" height="2" rx="1" fill="currentColor"/>
+                        <rect x="0" y="5.5" width="13" height="2" rx="1" fill="currentColor"/>
+                        <rect x="0" y="10" width="13" height="2" rx="1" fill="currentColor"/>
+                    </svg>
+                    详细列表
+                </button>
+                <button class="view-mode-btn" data-mode="grid" onclick="Material.setMode('grid')">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                        <rect x="0" y="0" width="5.5" height="5.5" rx="1.5" fill="currentColor"/>
+                        <rect x="7.5" y="0" width="5.5" height="5.5" rx="1.5" fill="currentColor"/>
+                        <rect x="0" y="7.5" width="5.5" height="5.5" rx="1.5" fill="currentColor"/>
+                        <rect x="7.5" y="7.5" width="5.5" height="5.5" rx="1.5" fill="currentColor"/>
+                    </svg>
+                    图标
+                </button>
+                <div class="toolbar-sep"></div>
+                <span class="toolbar-label">状态</span>
+                <div class="status-dropdown" id="statusDropdown">
+                    <button class="status-dropdown-btn" type="button" onclick="Material._toggleStatusDropdown(event)">
+                        <span class="sd-dot"></span><span class="sd-text">全部</span><span class="sd-arrow">▾</span>
+                    </button>
+                    <div class="status-dropdown-menu" id="statusDropdownMenu">
+                        <div class="sd-option active" data-value="" onclick="Material._pickStatus(event,'')"><span class="sd-dot sd-all"></span>全部</div>
+                        <div class="sd-option" data-value="成片" onclick="Material._pickStatus(event,'成片')"><span class="sd-dot sd-best"></span>成片</div>
+                        <div class="sd-option" data-value="好片" onclick="Material._pickStatus(event,'好片')"><span class="sd-dot sd-good"></span>好片</div>
+                        <div class="sd-option" data-value="待定" onclick="Material._pickStatus(event,'待定')"><span class="sd-dot sd-pending"></span>待定</div>
+                        <div class="sd-option" data-value="废片" onclick="Material._pickStatus(event,'废片')"><span class="sd-dot sd-reject"></span>废片</div>
+                    </div>
+                </div>
+                <div class="toolbar-sep"></div>
+                <span class="toolbar-label">导出</span>
+                <div class="status-dropdown" id="exportDropdown">
+                    <button class="status-dropdown-btn" type="button" onclick="Material._toggleExportDropdown(event)">
+                        <span class="sd-dot sd-all"></span><span class="sd-text">全部</span><span class="sd-arrow">▾</span>
+                    </button>
+                    <div class="status-dropdown-menu" id="exportDropdownMenu">
+                        <div class="sd-option active" data-value="" onclick="Material._pickExport(event,'')"><span class="sd-dot sd-all"></span>全部</div>
+                        <div class="sd-option" data-value="true" onclick="Material._pickExport(event,'true')"><span class="sd-dot sd-best"></span>已导出</div>
+                        <div class="sd-option" data-value="false" onclick="Material._pickExport(event,'false')"><span class="sd-dot sd-pending"></span>未导出</div>
+                    </div>
+                </div>
+                <div class="toolbar-sep"></div>
+                <span class="toolbar-label">质量</span>
+                <button class="toolbar-op-btn" id="opQuality" data-op="gte" onclick="Material.toggleOp('quality')">≥</button>
+                <select class="toolbar-select" id="filterQuality" onchange="Material.setFilter('quality', this.value)">
+                    <option value="">全部</option>
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <span class="toolbar-label">艺术</span>
+                <button class="toolbar-op-btn" id="opScore" data-op="gte" onclick="Material.toggleOp('score')">≥</button>
+                <select class="toolbar-select" id="filterScore" onchange="Material.setFilter('score', this.value)">
+                    <option value="">全部</option>
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <span class="toolbar-count" id="toolbarCount"></span>
+                <div class="toolbar-sep"></div>
+                <button class="toolbar-op-btn" id="btnMultiSelect" onclick="Material.toggleMultiSelect()">多选</button>
+                <div class="multi-actions" id="multiActions" style="display:none">
+                    <span class="multi-count" id="multiCount">已选 0</span>
+                    <button class="multi-action-btn" onclick="Material.markSelected()">标记状态</button>
+                    <button class="multi-action-btn" onclick="Material.exportSelected()">导出文件</button>
+                    <button class="multi-action-btn cancel" onclick="Material.clearSelection()">取消选择</button>
+                </div>
+            </div>
+            <div class="mark-overlay" id="markOverlay" onclick="Material.closeMarkDialog()"></div>
+            <div class="mark-dialog" id="markDialog" style="display:none">
+                <div class="mark-title">标记状态</div>
+                <div class="mark-options">
+                    <label class="mark-option best">
+                        <input type="radio" name="markStatus" value="成片">
+                        <span class="mark-dot"></span>成片
+                    </label>
+                    <label class="mark-option good">
+                        <input type="radio" name="markStatus" value="好片">
+                        <span class="mark-dot"></span>好片
+                    </label>
+                    <label class="mark-option pending" checked>
+                        <input type="radio" name="markStatus" value="待定" checked>
+                        <span class="mark-dot"></span>待定
+                    </label>
+                    <label class="mark-option reject">
+                        <input type="radio" name="markStatus" value="废片">
+                        <span class="mark-dot"></span>废片
+                    </label>
+                </div>
+                <div class="mark-footer">
+                    <button class="mark-btn-cancel" onclick="Material.closeMarkDialog()">取消</button>
+                    <button class="mark-btn-confirm" onclick="Material.confirmMark()">确认</button>
+                </div>
+            </div>
+            <div class="mark-overlay" id="exportOverlay" onclick="Material.closeExportDialog()"></div>
+            <div class="mark-dialog" id="exportDialog" style="display:none">
+                <div class="mark-title">导出文件</div>
+                <div class="export-form">
+                    <div class="export-group-wrap">
+                        <label class="export-label">已有导出分组</label>
+                        <div class="export-group-list" id="exportGroupList">
+                            <div class="export-group-empty">正在加载分组…</div>
+                        </div>
+                    </div>
+                    <label class="export-label">文件夹名</label>
+                    <input type="text" class="export-input" id="exportFolder" maxlength="30" oninput="Material._updateExportPreview()">
+                    <div class="export-preview" id="exportPreview">将导出到: export/ (source + compressed)</div>
+                </div>
+                <div class="mark-footer">
+                    <button class="mark-btn-cancel" onclick="Material.closeExportDialog()">取消</button>
+                    <button class="mark-btn-confirm" onclick="Material.confirmExport()">确认导出</button>
+                </div>
+            </div>
+            <div class="materials-layout" id="materialsLayout">
+                <div class="img-list" id="imgList"><div class="empty">选择任务后加载</div></div>
+                <div class="pane-divider" id="paneDivider"></div>
+                <div class="detail-panel" id="detailPanel">
+                    <div class="detail-empty">← 选择左侧图片查看详情</div>
+                </div>
+            </div>
+            <div class="grid-view" id="gridView">
+                <div class="grid-container" id="gridContainer"></div>
+            </div>
+        </div>
+        <div class="tab-panel" id="tab-exhibition">
+            <div class="expo-section">
+                <div class="expo-section-title">导出分组</div>
+                <div class="expo-slider">
+                    <button class="expo-nav expo-nav-left" onclick="Gallery.scrollGroups(-1)" title="向左">‹</button>
+                    <div class="expo-list" id="expoList">
+                        <div class="gallery-expo-empty" style="min-height:120px">选择任务后，将加载导出分组</div>
+                    </div>
+                    <button class="expo-nav expo-nav-right" onclick="Gallery.scrollGroups(1)" title="向右">›</button>
+                </div>
+            </div>
+            <div id="galleryWall"><div class="gallery-expo-empty">选择任务后，已导出的照片将在此展示</div></div>
+        </div>
+        <div class="tab-panel" id="tab-generate">
+            <div class="gen-layout">
+                <aside class="gen-left">
+                    <div class="gen-model-section">
+                        <div class="gen-section-title">模型选择</div>
+                        <select class="gen-cascade" id="gen-type">
+                            <option value="">类型</option>
+                            <option value="image">🖼 图片</option>
+                            <option value="video">🎬 视频</option>
+                            <option value="audio">🔊 音频</option>
+                        </select>
+                        <select class="gen-cascade" id="gen-provider" disabled><option value="">Provider</option></select>
+                        <select class="gen-cascade" id="gen-model" disabled><option value="">Model</option></select>
+                        <select class="gen-cascade" id="gen-factory" disabled><option value="">Factory ID</option></select>
+                    </div>
+                    <div class="gen-param-section">
+                        <div class="gen-section-title">参数</div>
+                        <div id="genParamForm"><p class="gen-placeholder">请先选择模型</p></div>
+                    </div>
+                    <div class="gen-bar">
+                        <select class="gen-count" id="gen-count">
+                            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+                        </select>
+                        <button class="gen-btn" id="gen-btn" onclick="Generate.run()" disabled>🚀 开始生成</button>
+                    </div>
+                </aside>
+                <section class="gen-center" id="genCenter">
+                    <p class="gen-placeholder">请选择模型并生成素材</p>
+                    <div class="gen-status" id="genStatus"></div>
+                </section>
+                <aside class="gen-right">
+                    <div class="gen-history-filter">
+                        <select class="gen-cascade" id="gen-flt-type" onchange="Generate.loadHistory(1)"><option value="">全部类型</option></select>
+                        <select class="gen-cascade" id="gen-flt-status" onchange="Generate.loadHistory(1)"><option value="">全部状态</option></select>
+                    </div>
+                    <div class="gen-history-list" id="genHistoryList"><p class="gen-placeholder">加载中...</p></div>
+                    <div class="gen-pager">
+                        <button id="gen-pager-prev" class="gen-pager-btn" onclick="Generate.pagePrev()" disabled>‹</button>
+                        <span id="gen-pager-info" class="gen-pager-info">1 / 1</span>
+                        <button id="gen-pager-next" class="gen-pager-btn" onclick="Generate.pageNext()" disabled>›</button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="task-modal-overlay" id="taskModalOverlay" onclick="closeTaskModal()"></div>
+<div class="task-modal" id="taskModal" style="display:none">
+    <div class="task-modal-header">
+        <span class="task-modal-title">选择任务</span>
+        <button class="task-modal-close" onclick="closeTaskModal()">✕</button>
+    </div>
+    <div class="task-modal-list" id="taskModalList">
+        <div class="task-dropdown-empty">加载中</div>
+    </div>
+</div>
+
+<div class="viewer" id="viewer">
+    <div class="viewer-img-wrap" id="viewerImgWrap" onclick="Viewer.close()">
+        <img id="viewerImg" src="" alt="">
+    </div>
+    <div class="viewer-bar" onclick="event.stopPropagation()">
+        <button class="viewer-btn" onclick="Viewer.prev(event)">‹ 上一张</button>
+        <span class="viewer-info" id="viewerInfo"></span>
+        <span class="viewer-id" id="viewerIdTag"></span>
+        <button class="viewer-btn" onclick="Viewer.next(event)">下一张 ›</button>
+    </div>
+</div>
+
+<div class="plan-viewer" id="planViewer">
+    <div class="plan-viewer-img-wrap" onclick="Plan.closePreview()">
+        <img id="planViewerImg" src="" alt="">
+    </div>
+    <div class="plan-viewer-bar" onclick="event.stopPropagation()">
+        <button class="plan-viewer-btn" onclick="Plan.prevPreview(event)">‹ 上一个</button>
+        <span class="plan-viewer-info" id="planViewerInfo"></span>
+        <button class="plan-viewer-btn" onclick="Plan.nextPreview(event)">下一个 ›</button>
+    </div>
+</div>
+
+<script>
+// ==================== Shared: Init & Navigation ====================
+document.addEventListener('DOMContentLoaded', function(){
+    loadTasks();
+    document.querySelectorAll('.tab-btn').forEach(function(b){
+        b.addEventListener('click', function(){ switchTab(b.dataset.tab); });
+    });
+    Viewer.init();
+});
+
+function switchTab(n){
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b.dataset.tab===n); });
+    document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.toggle('active', p.id==='tab-'+n); });
+}
+
+// ==================== Shared: Task loading ====================
+function loadTasks(){
+    var list = document.getElementById('taskModalList');
+    fetch('/api/tasks').then(function(r){ return r.json(); }).then(function(tasks){
+        if(!tasks.length){ list.innerHTML = '<div class="task-dropdown-empty">暂无任务</div>'; return; }
+        list.innerHTML = tasks.map(function(t){
+            return '<div class="task-option" onclick="pickTask(event, \''+t.name+'\')">'+
+                '<span class="task-option-name">'+t.name+'</span>'+
+                '<span class="task-option-count">'+t.total+'</span></div>';
+        }).join('');
+    })['catch'](function(){ list.innerHTML = '<div class="task-dropdown-empty">加载失败</div>'; });
+}
+
+function openTaskModal(event){
+    if(event) event.stopPropagation();
+    document.getElementById('taskModalOverlay').style.display = 'block';
+    document.getElementById('taskModal').style.display = 'flex';
+}
+
+function closeTaskModal(){
+    document.getElementById('taskModalOverlay').style.display = 'none';
+    document.getElementById('taskModal').style.display = 'none';
+}
+
+function pickTask(event, name){
+    if(event) event.stopPropagation();
+    closeTaskModal();
+    selectTask(name);
+}
+
+function selectTask(name){
+    document.getElementById('taskTitle').textContent = name;
+    document.querySelectorAll('.task-option').forEach(function(el){
+        el.classList.toggle('active', el.querySelector('.task-option-name') && el.querySelector('.task-option-name').textContent===name);
+    });
+    Overview.load(name);
+    switchTab('materials');
+    document.getElementById('imgList').innerHTML = '<div class="empty"><div class="spinner"></div>加载中</div>';
+    document.getElementById('detailPanel').innerHTML = '<div class="detail-empty">← 选择左侧图片查看详情</div>';
+
+    // 素材 tab：读取 material_lib/app/materials.yaml 中 status=succeed 的素材
+    Material.loadSucceed(name);
+
+    fetch('/api/task/'+encodeURIComponent(name)).then(function(r){ return r.json(); }).then(function(data){
+        if(data.error) throw new Error(data.error);
+        var media = data.media || {};
+        document.getElementById('taskMeta').innerHTML =
+            (media.total || 0)+' 项 &middot; '+(media.created_at || '')+' &middot; '+data.config.mode;
+        Gallery.load(media.items || [], name);
+    })['catch'](function(e){
+        console.error('任务详情加载失败', e);
+    });
+}
+</script>
+
+<!-- Tab modules -->
+<script src="/static/overview/overview.js?v=3"></script>
+<script src="/static/viewer.js"></script>
+<script src="/static/plan/plan.js?v=7"></script>
+<script src="/static/material/material.js?v=8"></script>
+<script src="/static/exhibition/gallery.js?v=2"></script>
+<script src="/static/generate/generate.js?v=1"></script>
+</body>
+</html>

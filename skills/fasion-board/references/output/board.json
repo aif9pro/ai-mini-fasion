@@ -1,0 +1,78 @@
+{
+  "skill": "fasion-board",
+  "version": "1.0.0",
+  "language": "zh-CN",
+  "source_role": "role.json",
+  "character_lock": {
+    "name": "",
+    "age_stage": "",
+    "age_range": "",
+    "gender_expression": "",
+    "identity": "",
+    "appearance": {
+      "face": "",
+      "hair": "",
+      "body": "",
+      "signature_features": []
+    },
+    "styling": {
+      "clothing": "",
+      "makeup_hair": "",
+      "accessories": ""
+    },
+    "fixed_features": []
+  },
+  "shots": [
+    {
+      "shot_id": "shot_01",
+      "shot_scale": "extreme_long_shot",
+      "shot_scale_zh": "远景",
+      "composition": "",
+      "visual_focus": "",
+      "prompt": "",
+      "prompt_zh": "",
+      "negative_prompt": ""
+    },
+    {
+      "shot_id": "shot_02",
+      "shot_scale": "long_shot",
+      "shot_scale_zh": "全景",
+      "composition": "",
+      "visual_focus": "",
+      "prompt": "",
+      "prompt_zh": "",
+      "negative_prompt": ""
+    },
+    {
+      "shot_id": "shot_03",
+      "shot_scale": "medium_shot",
+      "shot_scale_zh": "中景",
+      "composition": "",
+      "visual_focus": "",
+      "prompt": "",
+      "prompt_zh": "",
+      "negative_prompt": ""
+    },
+    {
+      "shot_id": "shot_04",
+      "shot_scale": "close_up",
+      "shot_scale_zh": "近景",
+      "composition": "",
+      "visual_focus": "",
+      "prompt": "",
+      "prompt_zh": "",
+      "negative_prompt": ""
+    },
+    {
+      "shot_id": "shot_05",
+      "shot_scale": "extreme_close_up",
+      "shot_scale_zh": "特写",
+      "composition": "",
+      "visual_focus": "",
+      "prompt": "",
+      "prompt_zh": "",
+      "negative_prompt": ""
+    }
+  ],
+  "inferred_items": []
+}
