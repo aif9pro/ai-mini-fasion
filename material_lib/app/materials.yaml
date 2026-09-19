@@ -371,7 +371,7 @@ materials:
   url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/99aaf0eb-24b3-4a77-87a6-ad53fe18578e.png
   local_path: ''
   task_id: ''
-  review: 1
+  review: 2
 - material_id: material_20260823_184205_32
   name: ''
   prompt: 雨夜先锋杂志时尚人像，自信性感的欧美女模，锋利下颌线与湿发背头，黑色亮面机车皮衣，结构感肩线与拉链细节，内搭黑色紧身衣，冷调烟熏眼妆，克制而有诱惑力的直视镜头眼神，一手轻拉皮衣领口，站在雨夜霓虹街头，湿沥青路面反光，红蓝紫霓虹与玻璃橱窗倒影，机顶硬闪主光与霓虹侧逆光，高反差湿润质感，黑冷蓝灰与霓虹点缀色调，杂志夜拍颗粒，低机位七分身到全身构图，50mm
@@ -388,4 +388,4 @@ materials:
   url: https://rh-hk-images-1252422369.cos.ap-hongkong.myqcloud.com/780b83b0b3dad1bf0d10dbc02027343f/output/195b5b63-e736-4719-8a4d-7fa985051752.png
   local_path: ''
   task_id: ''
-  review: 1
+  review: 0
